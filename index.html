@@ -746,8 +746,7 @@
           <div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
             <img src="image/POS.png" alt="POS" class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-70"></div>
-            <div
-              class="absolute top-2 right-2 px-3 py-1 rounded-full bg-gradient-to-r from-green-400 to-blue-500 text-white text-xs font-bold">
+            <div class="absolute top-2 right-2 px-3 py-1 rounded-full bg-blue-500/80 text-white text-xs font-bold">
               Website
             </div>
           </div>
@@ -802,7 +801,7 @@
             <img src="image/jasa service.png" alt="jasa service" class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-70"></div>
             <div
-              class="absolute top-2 right-2 px-3 py-1 rounded-full bg-gradient-to-r from-green-400 to-blue-500 text-white text-xs font-bold">
+              class="absolute top-2 right-2 px-3 py-1 rounded-full bg-gradient-to-r bg-blue-500/80 text-white text-xs font-bold">
               Website
             </div>
           </div>
@@ -868,8 +867,7 @@
           <div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
             <img src="image/Todo-list.png" alt="Todo-list" class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-70"></div>
-            <div
-              class="absolute top-2 right-2 px-3 py-1 rounded-full bg-gradient-to-r from-green-400 to-blue-500 text-white text-xs font-bold">
+            <div class="absolute top-2 right-2 px-3 py-1 rounded-full bg-blue-500/80 text-white text-xs font-bold">
               Website
             </div>
           </div>
@@ -882,7 +880,6 @@
             <!-- text clamp -->
             <p class="text-gray-600 dark:text-gray-400 mb-4 text-xs text-justify line-clamp-4 transition-all duration-300"
               id="desc3">
-              Of course, here is the English version:
 
               The Todo List App is an interactive web application for efficiently managing task lists. Users can easily
               add, edit,
@@ -943,8 +940,7 @@
           <div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
             <img src="image/Photobox.png" alt="Photobox" class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-70"></div>
-            <div
-              class="absolute top-2 right-2 px-3 py-1 rounded-full bg-gradient-to-r from-green-400 to-blue-500 text-white text-xs font-bold">
+            <div class="absolute top-2 right-2 px-3 py-1 rounded-full bg-blue-500/80 text-white text-xs font-bold">
               Website
             </div>
           </div>
@@ -1006,8 +1002,7 @@
           <div class="relative aspect-video bg-black flex items-center justify-center overflow-hidden">
             <img src="image/Ular Tangga Kuis.png" alt="Photobox" class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-t from-dark-bg via-transparent to-transparent opacity-70"></div>
-            <div
-              class="absolute top-2 right-2 px-3 py-1 rounded-full bg-gradient-to-r from-orange-400 to-yellow-500 text-white text-xs font-bold">
+            <div class="absolute top-2 right-2 px-3 py-1 rounded-full bg-orange-500/80 text-white text-xs font-bold">
               Game
             </div>
           </div>
@@ -3429,44 +3424,44 @@
 
     // Navbar Active on Scroll with Gradient
     function updateActiveNavLink() {
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
 
-      let current = '';
-      const scrollPosition = window.scrollY + 100; // Offset untuk header
+        let current = '';
+        const scrollPosition = window.scrollY + 100; // Offset untuk header
 
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-          current = section.getAttribute('id');
-        }
-      });
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+          }
+        });
 
-      // Update active class
-      navLinks.forEach(link => {
-        link.classList.remove('active', 'gradient-bg', 'bg-clip-text', 'text-transparent');
-        link.classList.add('text-gray-800', 'dark:text-gray-200');
+        // Update active class
+        navLinks.forEach(link => {
+          link.classList.remove('active', 'text-[#00BFFF]', 'bg-clip-text', 'text-transparent');
+          link.classList.add('text-gray-800', 'dark:text-gray-200');
 
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active', 'gradient-bg', 'bg-clip-text', 'text-transparent');
-          link.classList.remove('text-gray-800', 'dark:text-gray-200');
-        }
-      });
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active', 'text-[#00BFFF]', 'bg-clip-text', 'text-transparent');
+            link.classList.remove('text-gray-800', 'dark:text-gray-200');
+          }
+        });
 
-      // Update mobile menu links juga
-      const mobileLinks = document.querySelectorAll('#mobile-menu a');
-      mobileLinks.forEach(link => {
-        link.classList.remove('gradient-bg', 'bg-clip-text', 'text-transparent');
-        link.classList.add('text-gray-800', 'dark:text-gray-200');
+        // Update mobile menu links juga
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+          link.classList.remove('text-[#00BFFF]', 'bg-clip-text', 'text-transparent');
+          link.classList.add('text-gray-800', 'dark:text-gray-200');
 
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('gradient-bg', 'bg-clip-text', 'text-transparent');
-          link.classList.remove('text-gray-800', 'dark:text-gray-200');
-        }
-      });
-    }
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('text-[#00BFFF]', 'bg-clip-text', 'text-transparent');
+            link.classList.remove('text-gray-800', 'dark:text-gray-200');
+          }
+        });
+      }
 
     // Event listeners
     window.addEventListener('scroll', updateActiveNavLink);
@@ -3523,7 +3518,7 @@
         })
         .catch((err) => {
           console.error("FAILED...", err);
-          alert("Email failed! Check console for details.");
+          alert("Email failed!. Try again later");
         });
     }
   </script>
