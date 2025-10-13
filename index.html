@@ -1325,6 +1325,10 @@
           class="filter-btn active px-6 py-2.5 rounded-full font-semibold text-sm shadow-md hover:shadow-lg transition-all">
           All Certificates
         </button>
+        <button onclick="filterCertificates('bnsp')"
+          class="filter-btn px-6 py-2.5 rounded-full font-semibold text-sm bg-white dark:bg-gray-800 shadow-md hover:shadow-lg text-gray-700 dark:text-gray-300 transition-all">
+          Badan Nasional Sertifikasi Profesi
+        </button>
         <button onclick="filterCertificates('gcsb')"
           class="filter-btn px-6 py-2.5 rounded-full font-semibold text-sm bg-white dark:bg-gray-800 shadow-md hover:shadow-lg text-gray-700 dark:text-gray-300 transition-all">
           Google Cloud Skill Boost
@@ -1359,6 +1363,62 @@
       <!-- GRID CONTAINER DENGAN TINGGI SAMA -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
+        <!-- Certificate 1 - BNSP -->
+        <div class="certificate-card" data-category="bnsp">
+          <div
+            class="rounded-xl overflow-hidden shadow-neuro-light dark:shadow-neuro-dark bg-white dark:bg-gray-800 hover:shadow-2xl transition-shadow duration-300 h-full flex flex-col">
+            <div class="relative h-48 sm:h-56 overflow-hidden flex-shrink-0">
+              <a href="https://drive.google.com/file/d/1aLpJv8YsUYymxP1h9o9LX0CVwglfmyO2/view?usp=sharing"
+                target="_blank" class="block w-full h-full">
+                <img src="image/bnsp.jpg"
+                  alt="BNSP-Okupasi Junior Web Programmer"
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </a>
+              <div
+                class="absolute top-2 left-2 px-3 py-1 rounded-full bg-gray-500/80 backdrop-blur-sm text-white text-xs font-bold">
+                2024
+              </div>
+              <div
+                class="absolute top-2 right-2 px-3 py-1 rounded-full bg-yellow-700 backdrop-blur-sm text-white text-xs font-bold">
+                BNSP
+              </div>
+            </div>
+            <div class="p-4 sm:p-6 flex-grow flex flex-col">
+              <h3 class="text-sm sm:text-base font-bold mb-2 line-clamp-2 text-gray-800 dark:text-white">
+                Okupasi Junior Web Programmer
+              </h3>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Certificate 22 - GCSB -->
+        <div class="certificate-card" data-category="gcsb">
+          <div
+            class="rounded-xl overflow-hidden shadow-neuro-light dark:shadow-neuro-dark bg-white dark:bg-gray-800 hover:shadow-2xl transition-shadow duration-300 h-full flex flex-col">
+            <div class="relative h-48 sm:h-56 overflow-hidden flex-shrink-0">
+              <a href="https://www.credly.com/badges/714a8eca-7334-404a-944d-0d99a06f1425/linked_in_profile"
+                target="_blank" class="block w-full h-full">
+                <img src="image/Google Cloud Computing Foundations Certificate.png"
+                  alt="Google Cloud Computing Foundations Certificate"
+                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+              </a>
+              <div
+                class="absolute top-2 left-2 px-3 py-1 rounded-full bg-gray-500/80 backdrop-blur-sm text-white text-xs font-bold">
+                2024
+              </div>
+              <div
+                class="absolute top-2 right-2 px-3 py-1 rounded-full bg-red-500/80 backdrop-blur-sm text-white text-xs font-bold">
+                GCSB
+              </div>
+            </div>
+            <div class="p-4 sm:p-6 flex-grow flex flex-col">
+              <h3 class="text-sm sm:text-base font-bold mb-2 line-clamp-2 text-gray-800 dark:text-white">
+                Google Cloud Computing Foundations Certificate
+              </h3>
+            </div>
+          </div>
+        </div>
+        
         <!-- Certificate 22 - GCSB -->
         <div class="certificate-card" data-category="gcsb">
           <div
@@ -1835,10 +1895,10 @@
           <div
             class="rounded-xl overflow-hidden shadow-neuro-light dark:shadow-neuro-dark bg-white dark:bg-gray-800 hover:shadow-2xl transition-shadow duration-300 h-full flex flex-col">
             <div class="relative h-48 sm:h-56 overflow-hidden flex-shrink-0">
-              <a href="https://www.cloudskillsboost.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/8312786"
+              <a href="https://www.cloudskillsboost.google/public_profiles/7bac8c77-7f88-49b6-941a-2f588214bd53/badges/8312738"
                 target="_blank" class="block w-full h-full">
-                <img src="image/Set Up an App Dev Environment on Google Cloud.png"
-                  alt="Set Up an App Dev Environment on Google Cloud"
+                <img src="image/Create and Manage Cloud Resources.png"
+                  alt="Create and Manage Cloud Resources"
                   class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
               </a>
               <div
@@ -1852,7 +1912,7 @@
             </div>
             <div class="p-4 sm:p-6 flex-grow flex flex-col">
               <h3 class="text-sm sm:text-base font-bold mb-2 line-clamp-2 text-gray-800 dark:text-white">
-                Set Up an App Dev Environment on Google Cloud
+                Create and Manage Cloud Resources
               </h3>
             </div>
           </div>
@@ -1880,7 +1940,7 @@
             </div>
             <div class="p-4 sm:p-6 flex-grow flex flex-col">
               <h3 class="text-sm sm:text-base font-bold mb-2 line-clamp-2 text-gray-800 dark:text-white">
-                Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud
+                Google Cloud Computing Foundations Data, ML, and AI in Google Cloud
               </h3>
             </div>
           </div>
@@ -1908,7 +1968,7 @@
             </div>
             <div class="p-4 sm:p-6 flex-grow flex flex-col">
               <h3 class="text-sm sm:text-base font-bold mb-2 line-clamp-2 text-gray-800 dark:text-white">
-                Google Cloud Computing Foundations: Networking & Security in Google Cloud
+                Google Cloud Computing Foundations Networking & Security in Google Cloud
               </h3>
             </div>
           </div>
@@ -1934,7 +1994,7 @@
             </div>
             <div class="p-4 sm:p-6 flex-grow flex flex-col">
               <h3 class="text-sm sm:text-base font-bold mb-2 line-clamp-2 text-gray-800 dark:text-white">
-                Google Cloud Computing Foundations: Infrastructure in Google Cloud
+                Google Cloud Computing Foundations Infrastructure in Google Cloud
               </h3>
             </div>
           </div>
@@ -1962,7 +2022,7 @@
             </div>
             <div class="p-4 sm:p-6 flex-grow flex flex-col">
               <h3 class="text-sm sm:text-base font-bold mb-2 line-clamp-2 text-gray-800 dark:text-white">
-                Google Cloud Computing Foundations: Cloud Computing Fundamentals
+                Google Cloud Computing Foundations Cloud Computing Fundamentals
               </h3>
             </div>
           </div>
@@ -1988,7 +2048,7 @@
             </div>
             <div class="p-4 sm:p-6 flex-grow flex flex-col">
               <h3 class="text-sm sm:text-base font-bold mb-2 line-clamp-2 text-gray-800 dark:text-white">
-                Google Cloud Computing Foundations: Infrastructure in Google Cloud
+                Google Cloud Computing Foundations Infrastructure in Google Cloud
               </h3>
             </div>
           </div>
